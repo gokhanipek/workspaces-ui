@@ -8,7 +8,8 @@ import Workspaces from './Workspaces/Workspaces';
 import Card from 'react-bootstrap/Card';
 
 import { Workspace } from './types/types';
-import { ENDPOINTS, createDeleteService, listWorkspacesService } from './contants/constants';
+import { ENDPOINTS } from './constants/constants';
+import { createDeleteService, listWorkspacesService } from './services/services';
 
 function App() {
 

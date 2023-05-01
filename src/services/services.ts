@@ -1,25 +1,6 @@
+import { BASE_BODY, BASE_URL, ENDPOINTS, HEADERS, HTTP } from "../constants/constants";
 import { Workspace } from "../types/types";
 import { requestBody } from "../utils/utils";
-
-export const BASE_URL = "https://39314-3000.2.codesphere.com/";
-
-export enum HTTP {
-    POST = "post"
-}
-
-export enum ENDPOINTS {
-    LIST_WORKSPACES = 'listWorkspaces',
-    CREATE_WORKSPACE = 'createWorkspace',
-    DELETE_WORKSPACE = 'deleteWorkspace'
-}
-
-export const BASE_BODY = {
-    teamId: 1,
-}
-
-export const HEADERS = {
-    "Content-Type": "application/json",
-}
 
 export function createDeleteService(endpoint: ENDPOINTS, fieldName: string, field: string | number, setWorkspaces: (value: Workspace[]) => void) {
     if (ENDPOINTS.CREATE_WORKSPACE || ENDPOINTS.DELETE_WORKSPACE) {

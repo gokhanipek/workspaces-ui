@@ -1,4 +1,4 @@
-import { BASE_BODY } from "../contants/constants";
+import { BASE_BODY } from "../constants/constants";
 import { Workspace } from "../types/types";
 
 export const isNameAvailable = (workspaces: Workspace[], value: string): boolean => {
