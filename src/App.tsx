@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
+import { ListGroup } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+
 import Popup from './Popup/Popup'
 import Workspaces from './Workspaces/Workspaces';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
 
-import { ListGroup } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import { Workspace } from './types/types';
 import { ENDPOINTS, createDeleteService, listWorkspacesService } from './contants/constants';
 
